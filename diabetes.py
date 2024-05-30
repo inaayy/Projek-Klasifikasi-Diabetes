@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+pip install scikit-learn
+
 
 # Load the trained model
 # model = pickle.load(open('diabetes_dataset.sav','rb'))
