@@ -5,11 +5,11 @@ import numpy as np
 # Load the trained model
 filename = 'diabetes_dataset.sav'
 with open(filename, 'rb') as file:
-    model = pickle.load(file)
+    model_RF = pickle.load(file)
 
 # Function to make predictions
 def predict_diabetes(features):
-    prediction = model.predict([features])
+    prediction = model_RF.predict([features])
     return prediction[0]
 
 # Streamlit app
