@@ -5,7 +5,7 @@ import numpy as np
 # Load the trained model
 filename = 'diabetes_dataset.sav'
 with open(filename, 'rb') as file:
-    model = pickle.load(file)
+    model_RF = pickle.load(file)
 
 # Streamlit app
 st.title("Diabetes Classification App")
