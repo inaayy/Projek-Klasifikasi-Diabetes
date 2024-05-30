@@ -7,11 +7,6 @@ filename = 'diabetes_dataset.sav'
 with open(filename, 'rb') as file:
     model = pickle.load(file)
 
-# Function to make predictions
-def predict_diabetes(features):
-    prediction = model.predict([features])
-    return prediction[0]
-
 # Streamlit app
 st.title("Diabetes Classification App")
 
