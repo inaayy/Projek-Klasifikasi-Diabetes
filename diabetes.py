@@ -3,9 +3,8 @@ import pickle
 import numpy as np
 
 # Load the trained model
-filename = 'diabetes_dataset.sav'
-with open(filename, 'rb') as file:
-    model_RF = pickle.load(file)
+# load save model
+model_RF = pickle.load(open('diabetes_dataset.sav','rb'))
 
 # Function to make predictions
 def predict_diabetes(features):
