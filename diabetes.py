@@ -3,12 +3,13 @@ import pickle
 import numpy as np
 
 # Load the trained model
-# load save model
-model_RF = pickle.load(open('diabetes_dataset.sav','rb'))
+filename = 'diabetes_dataset.sav'
+with open(filename, 'rb') as file:
+    model = pickle.load(file)
 
 # Function to make predictions
 def predict_diabetes(features):
-    prediction = model_RF.predict([features])
+    prediction = model.predict([features])
     return prediction[0]
 
 # Streamlit app
